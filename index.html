@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтелект-карта: Речовини та суміші — 7 клас</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #f0f8ff, #e6f2ff);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #0066cc;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        .mindmap {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            min-height: 800px;
+        }
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 80px;
+            transform: translateX(-50%);
+            background: #ffff99;
+            border: 4px solid #ffcc00;
+            border-radius: 50%;
+            width: 220px;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            padding: 20px;
+        }
+        .branch {
+            position: absolute;
+            background: white;
+            border: 3px solid;
+            border-radius: 12px;
+            padding: 12px 18px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            font-weight: bold;
+            min-width: 180px;
+        }
+        .left   { background: #e6ffe6; border-color: #28a745; color: #155724; }
+        .right  { background: #fff0e6; border-color: #fd7e14; color: #c45c00; }
+        .down   { background: #f8e6ff; border-color: #6f42c1; color: #4a2c8c; }
+        .small  { font-size: 0.95em; min-width: 140px; padding: 10px 14px; }
+        .very-small { font-size: 0.9em; min-width: 120px; padding: 8px 12px; }
+
+        .line {
+            position: absolute;
+            background: #666;
+            height: 3px;
+            transform-origin: left;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Інтелект-карта: Досліджуємо речовини та суміші<br>
+    <small>7 клас • Артем Оладько</small></h1>
+
+<div class="mindmap">
+
+    <!-- Центр -->
+    <div class="center">
+        ДОСЛІДЖУЄМО<br>РЕЧОВИНИ ТА СУМІШІ
+    </div>
+
+    <!-- Головні гілки -->
+    <div class="branch left" style="top:180px; left:10%; width:280px;">
+        РЕЧОВИНИ<br>(чисті, індивідуальні)
+    </div>
+
+    <div class="branch right" style="top:180px; right:10%; width:280px;">
+        СУМІШІ<br>(не бувають чистими)
+    </div>
+
+    <!-- Підгілки Речовини -->
+    <div class="branch left small" style="top:340px; left:5%;">
+        Прості речовини<br>(один елемент)
+        <div class="very-small" style="margin-top:8px; color:#555;">
+            Fe, O₂, S, Cu, H₂, N₂, C (вуглець)
+        </div>
+    </div>
+
+    <div class="branch left small" style="top:480px; left:12%;">
+        Складні речовини<br>(сполуки)
+        <div class="very-small" style="margin-top:8px; color:#555;">
+            H₂O, NaCl, CO₂, C₁₂H₂₂O₁₁ (цукор),<br>H₂SO₄, CaCO₃
+        </div>
+    </div>
+
+    <!-- Підгілки Суміш -->
+    <div class="branch right small" style="top:340px; right:5%;">
+        Однорідні (гомогенні)
+        <div class="very-small" style="margin-top:8px; color:#555;">
+            розчин солі, повітря,<br>спиртовий розчин, лимонад
+        </div>
+    </div>
+
+    <div class="branch right small" style="top:480px; right:12%;">
+        Неоднорідні (гетерогенні)
+        <div class="very-small" style="margin-top:8px; color:#555;">
+            пісок + вода, олія + вода,<br>граніт, дим, сніг + сіль
+        </div>
+    </div>
+
+    <!-- Нижня гілка -->
+    <div class="branch down" style="top:680px; left:50%; transform:translateX(-50%); width:400px; text-align:center;">
+        СПОСОБИ РОЗДІЛЕННЯ СУМІШЕЙ
+        <div style="margin-top:10px; font-weight:normal; font-size:0.95em;">
+            • Відстоювання • Фільтрування • Випаровування<br>
+            • Кристалізація • Дистилювання • Хроматографія<br>
+            • Магнітна сепарація • Відсіювання
+        </div>
+    </div>
+
+    <!-- Декоративні лінії (можна прибрати або залишити) -->
+    <div class="line" style="top:140px; left:50%; width:2px; height:180px;"></div>
+    <div class="line" style="top:240px; left:15%; width:35%; height:3px;"></div>
+    <div class="line" style="top:240px; right:15%; width:35%; height:3px;"></div>
+    <div class="line" style="top:600px; left:50%; width:2px; height:100px;"></div>
+
+</div>
+
+</body>
+</html>
